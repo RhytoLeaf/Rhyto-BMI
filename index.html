@@ -5,6 +5,14 @@
     <title>BMI Calculator</title>
 
     <link rel="icon" type="image/png" href="logo-icon.png">
+
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
     <style>
         body {
             background-color: green;
@@ -27,6 +35,18 @@
         #result {
             color: white;
             margin-top: 10px;
+        }
+
+        .list-title {
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        .bmi-list {
+            margin-top: 10px;
+            padding-left: 20px;
+            list-style-type: decimal;
+            /* This sets the numbering style to decimal (1, 2, 3, etc.) */
         }
     </style>
 </head>
@@ -71,12 +91,62 @@
         <br>
         <br>
 
+
         <button style="padding: 0.5rem;" id="calculate">Calculate<br>BMI</button>
+
+        <br><br>
+
+        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">
+            * DISCLAIMER *
+        </button>
+
 
         <div id="result"></div>
 
     </div>
 
+
+
+
+    <div id="myModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">BMI Classification Information</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body" style="">
+                    <p>This classification is often used by organizations like the World Health Organization (WHO) and
+                        the Centers for Disease Control and Prevention (CDC) to help assess an individual's weight
+                        status and potential health risks associated with different BMI ranges.</p>
+                    <p>Keep in mind that specific guidelines and cutoffs might vary slightly between different
+                        organizations and countries.</p>
+                    <p class="list-title">Please keep in mind:</p>
+
+                    <!-- BMI Classifications -->
+
+                    <!-- Limitations -->
+                    <ol class="limitations-list">
+                        <li>Doesn't account for muscle vs. fat</li>
+                        <li>Doesn't differentiate body composition</li>
+                        <li>Age and gender variations</li>
+                        <li>Ethnic and racial differences</li>
+                        <li>Doesn't consider health factors</li>
+                        <li>Limited accuracy for children and adolescents</li>
+                        <li>Doesn't reflect central obesity</li>
+                        <li>May misclassify individuals</li>
+                        <li>Not suitable for athletes and older adults</li>
+                        <li>Health risk differences within categories</li>
+                    </ol>
+
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 
