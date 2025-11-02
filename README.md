@@ -10,18 +10,10 @@ Rhyto-BMI is a simple and intuitive Body Mass Index (BMI) calculator that helps 
 *   **Responsive Design:** Use it on any device, from your desktop to your smartphone.
 *   **Informative Disclaimer:** Learn about the limitations of BMI and its use as a health indicator.
 
-## Live Demo
-
-[Link to live demo](https://rhyto-bmi.netlify.app/)
-
-## Screenshots
-
-![Screenshot of Rhyto-BMI](images/screenshot.png)
-
 ## Getting Started
 
 1.  Clone the repository: `git clone https://github.com/Rhyto-BMI/Rhyto-BMI.git`
-2.  Open `index.html` in your browser.
+2.  Open `index.html` in your browser to run the application locally.
 
 ## License
 
