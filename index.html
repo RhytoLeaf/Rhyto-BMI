@@ -48,30 +48,6 @@
             list-style-type: decimal;
             /* This sets the numbering style to decimal (1, 2, 3, etc.) */
         }
-        .toggle-container {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-bottom: 1rem;
-        }
-
-        .toggle-label {
-            margin-right: 1rem;
-        }
-
-        .custom-switch .custom-control-label::before {
-            width: 50px;
-            height: 25px;
-        }
-
-        .custom-switch .custom-control-label::after {
-            width: 21px;
-            height: 21px;
-        }
-
-        .custom-switch .custom-control-input:checked~.custom-control-label::after {
-            transform: translateX(25px);
-        }
     </style>
 </head>
 
@@ -79,12 +55,9 @@
     <div id="calculator">
         <h1>BMI Calculator</h1>
 
-        <div class="toggle-container">
-            <label class="toggle-label">Metric/Imperial</label>
-            <div class="custom-control custom-switch">
-                <input type="checkbox" class="custom-control-input" id="unit-switch">
-                <label class="custom-control-label" for="unit-switch"></label>
-            </div>
+        <div class="custom-control custom-switch">
+            <input type="checkbox" class="custom-control-input" id="unit-switch">
+            <label class="custom-control-label" for="unit-switch">Metric/Imperial</label>
         </div>
 
         <br>
